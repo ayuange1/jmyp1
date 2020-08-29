@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/Sliding_Validation_Gu.js"></script>
+    <script src="../js/jquery.min.js"></script>
+
     <link rel="stylesheet" href="../dist/css/reset.css">
     <link rel="stylesheet" href="../dist/css/login.css">
     <link rel="stylesheet" href="../fonts/iconfont.css">
@@ -65,6 +69,14 @@
                         <span></span>
                         <input type="password" placeholder="密码">
                     </div>
+                    <div class="slide" style="border: 0;">
+                        <!-- <div onselectstart="return false;" id="sliding-block-wrapper964" style="width: 300px; height: 40px; background-color: rgb(232, 232, 232); margin: 0px; position: relative; left: 0px; top: 0px; z-index: 10000; box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px;">
+                            <div class="sliding-block-text" style="color: black; font-size: 12px; width: 100%; height: 100%; text-align: center; line-height: 40px; z-index: 10; position: absolute; left: 0px; top: 0px;">请向右滑动滑块</div>
+                            <div class="current-progress-bg" style="width: 0px; height: 100%; background-color: rgb(255, 184, 0); position: absolute; left: 0px; top: 0px;"></div>
+                            <div class="sliding-block" style="width: 50px; height: calc(100% - 2px); background-color: rgb(255, 255, 255); position: absolute; left: 0px; top: 0px; border: 1px solid rgb(204, 204, 204); z-index: 100; cursor: move;"><i style="width: 16px;height: 16px;display: inline-block;background-image: url(sliding_block_image/right-arrow.png);background-size: 100% 100%;position: absolute;top: calc(50% - 8px);left: calc(50% - 8px);"></i></div>
+                            <div class="successful-icon"></div>
+                        </div> -->
+                    </div>
                     <p class="check"> <input type="checkbox"></input>&nbsp;&nbsp;&nbsp;自动登录
                     </p>
                     <div class="sub" style="margin-bottom: 0;border: 0;">
@@ -72,6 +84,11 @@
                     </div>
 
                 </form>
+                <div class="genDuo">
+                    <i>更多</i>
+                    <span></span>
+                </div>
+
                 <p>你也可以使用以下账号登录</p>
                 <div class="pic clean">
                     <span>
@@ -148,6 +165,17 @@
             </div>
         </div>
     </div>
+    <script>
+        var sliding_validation = SlidingValidation.create($('.slide'), {}, function() {});
+        $(function() {
+            $(".genDuo span").click(function() {
+                $(this).css({
+                    "backgroundPosition": "0"
+                })
+                $(".second").toggle(500)
+            })
+        })
+    </script>
 </body>
 <script src="../fonts/iconfont.js"></script>
 
