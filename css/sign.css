@@ -177,3 +177,26 @@ html {
   float: left;
   margin: 0 8px 0 4px;
   border-bottom: solid 1px #d7d7dd; }
+
+.warm {
+  margin-top: 5px;
+  color: #999999;
+  display: none; }
+
+.message .warm,
+.message .cuo {
+  position: absolute;
+  left: 22px;
+  top: 193px; }
+
+.forms .cuo {
+  color: #999999;
+  display: none; }
+
+.forms .cuo span {
+  width: 18px;
+  height: 16px;
+  display: block;
+  float: left;
+  background: url(../img/sign.jpg) no-repeat;
+  background-position: 0 -102px; }

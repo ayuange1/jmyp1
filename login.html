@@ -34,17 +34,17 @@
             <div class="loginBox">
                 <div class="loginTit clean">
                     <h1>登录聚美</h1>
-                    <p style="margin: 0;">还没有聚美账号？<a href="">30秒注册</a> </p>
+                    <p style="margin: 0;">还没有聚美账号？<a href="sign.html">30秒注册</a> </p>
                 </div>
                 <form action="" class="forms">
                     <section class="radio">
-                        <span>
-                            <input type="radio">
+                        <span class="radio1">
+                            <input type="radio" name="1" checked>
                             <p style="margin: 0;">手机动态密码登录</p>
                         
                         </span>
-                        <span>
-                            <input type="radio">
+                        <span class="radio2">
+                            <input type="radio" name="1">
                             <p style="margin: 0;">普通登录</p>
                             
                         </span>
@@ -53,11 +53,11 @@
                         <span>
                             
                         </span>
-                        <input type="text" placeholder="已注册的手机号">
+                        <input type="text" placeholder="已注册的手机号" class="btn1">
                     </div>
                     <div class="message" style="border: 0;">
                         <span></span>
-                        <input type="text" placeholder="动态密码" style="width: 100px;">
+                        <input type="text" placeholder="动态密码" style="width: 100px;" class="btn2">
                         <input type="button" value="获取手机动态密码">
 
 
@@ -67,7 +67,7 @@
 
                     <div class="pwd">
                         <span></span>
-                        <input type="password" placeholder="密码">
+                        <input type="password" placeholder="密码" class="btn3">
                     </div>
                     <div class="slide" style="border: 0;">
                         <!-- <div onselectstart="return false;" id="sliding-block-wrapper964" style="width: 300px; height: 40px; background-color: rgb(232, 232, 232); margin: 0px; position: relative; left: 0px; top: 0px; z-index: 10000; box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px;">
@@ -80,17 +80,19 @@
                     <p class="check"> <input type="checkbox"></input>&nbsp;&nbsp;&nbsp;自动登录
                     </p>
                     <div class="sub" style="margin-bottom: 0;border: 0;">
-                        <input type="submit" value="登录">
+                        <input type="button" value="登录" class="btn4">
                     </div>
 
                 </form>
-                <div class="genDuo">
-                    <i>更多</i>
-                    <span></span>
-                </div>
+
 
                 <p>你也可以使用以下账号登录</p>
+
                 <div class="pic clean">
+                    <div class="genDuo">
+                        <i>更多</i>
+                        <s class="shang"></s>
+                    </div>
                     <span>
                         <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-bianzu"></use>
@@ -167,13 +169,69 @@
     </div>
     <script>
         var sliding_validation = SlidingValidation.create($('.slide'), {}, function() {});
+        var radio1 = document.querySelectorAll("input")[0];
+        var radio2 = document.querySelectorAll("input")[1];
+        var message = document.querySelectorAll(".message");
+        var radioWrap = document.querySelector(".radio1");
+        var radioWrap2 = document.querySelector(".radio2");
+        console.log(radioWrap);
+        console.log(radioWrap2);
+        console.log(message);
+        console.log(radio1.checked)
+
+
+        console.log(radio2.checked)
+
         $(function() {
-            $(".genDuo span").click(function() {
+            $(".genDuo s").click(function() {
                 $(this).css({
-                    "backgroundPosition": "0"
+                    "backgroundPosition": "0 0"
                 })
                 $(".second").toggle(500)
+
             })
+            console.log($(".radio span input"))
+            console.log($(".radio span input"))
+            $(".radio2").click(function() {
+                $(".message").css({
+                    "display": "none"
+
+                })
+                $(".slide").show()
+                $(".pwd").show()
+            })
+            $(".radio1").click(function() {
+                $(".message").show()
+                $(".slide").hide()
+                $(".pwd").hide()
+            })
+            console.log($(".forms div input"))
+
+
+            $(".btn4").click(function() {
+                console.log($(".btn1").val());
+                console.log($(".btn3").val());
+
+                $.get("http://jx.xuzhixiang.top/ap/api/login.php", {
+                    username: $(".btn1").val(),
+                    password: $(".btn3").val()
+                }, data => {
+                    console.log(data);
+                    if (data.code) {
+                        location.href = "../html/index.html";
+
+
+                    } else {
+
+                        alert(data.msg);
+                    }
+                })
+            })
+
+
+
+
+
         })
     </script>
 </body>

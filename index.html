@@ -145,7 +145,9 @@
     <div class="tit_con">
         <p><span></span> 每日十点上新</p>
     </div>
+    <div class="pro_con">
 
+    </div>
     <div class="footWrap">
         <div class="footer_top">
             <div class="box">
@@ -369,7 +371,7 @@
             </li>
         </ul>
     </div>
-
+    <script src="../js/data.js"></script>
     <script>
         $(function() {
             console.log($(".top_r .xia").eq(0))
@@ -383,6 +385,16 @@
             });
 
 
+            $.get("http://jx.xuzhixiang.top/ap/api/productlist.php", {
+
+            }, data => {
+                console.log(data)
+            })
+            $.get("http://jx.xuzhixiang.top/ap/api/productlist.php", {
+                uid: 38629,
+            }, data => {
+                console.log(data)
+            })
         });
     </script>
 </body>
