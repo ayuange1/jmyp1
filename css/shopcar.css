@@ -1,0 +1,147 @@
+.header {
+  width: 960px;
+  margin: 0 auto; }
+
+.login_tou {
+  float: right; }
+
+.login_tou a {
+  color: #ed145b; }
+
+.logo_tou {
+  padding: 20px 0; }
+
+.logo_tou img {
+  float: left; }
+
+.jinDU {
+  width: 377PX;
+  height: 48px;
+  background: url(../img/jindu.png) no-repeat;
+  background-position: -8px 0;
+  float: right;
+  margin-top: 20px; }
+
+.Car_wrap {
+  border-top: solid 2px #f1f1f1; }
+
+.car_list {
+  width: 960px;
+  margin: 0 auto; }
+
+.car_id {
+  background: #f2f2f2;
+  padding: 10px 3px;
+  border: solid 1px #cecece; }
+
+.car_id input {
+  float: left; }
+
+.car_id p {
+  float: left; }
+
+.car_id ul {
+  float: right; }
+
+.car_id ul li {
+  float: left;
+  padding: 0 40px; }
+
+.product img {
+  width: 60px;
+  height: 60px; }
+
+.product ul li input {
+  margin-top: 20px; }
+
+.product ul {
+  border: solid 1px #cecece;
+  padding: 25px 5px; }
+
+.product ul li {
+  float: left; }
+
+.NUmber {
+  width: 78px;
+  height: 24px;
+  border: solid 1px #cecece;
+  margin-left: 170px; }
+
+.NUmber span {
+  width: 22px;
+  height: 22px;
+  display: block;
+  float: left;
+  border: solid 1px #3333;
+  text-align: center;
+  line-height: 22px; }
+
+.NUmber input {
+  width: 30px;
+  height: 22px;
+  float: left;
+  text-align: center; }
+
+.price {
+  color: #ed145b;
+  font-size: 14px;
+  margin-left: 60px; }
+
+.del {
+  width: 18px;
+  height: 18px;
+  display: block;
+  background: url(../img/del.png) no-repeat;
+  background-position: -6px -28px;
+  margin-left: 105px; }
+
+.car_total {
+  border: solid 1px #cecece;
+  background: #f2f2f2;
+  padding: 10px 10px; }
+
+.car_total div {
+  float: right; }
+
+.car_total div p {
+  float: right;
+  color: #ed145b;
+  font-size: 14px;
+  font-weight: 800;
+  margin-left: 10px; }
+
+.car_jie {
+  border: solid 1px #cecece;
+  background: #f1f1f1;
+  margin-top: 20px; }
+
+.car_jie input {
+  float: left; }
+
+.car_jie p {
+  float: left; }
+
+.car_r {
+  float: right; }
+
+.car_r h1 {
+  float: left; }
+
+.car_r div {
+  float: left; }
+
+.car_r div p {
+  float: right;
+  font-size: 18px;
+  color: #ed145b;
+  font-weight: 900; }
+
+.car_r button {
+  float: left; }
+
+.car_r button {
+  width: 145px;
+  height: 48px;
+  background: #ed145b;
+  color: #fff;
+  font-size: 18px; }

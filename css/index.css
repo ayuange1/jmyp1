@@ -9,7 +9,8 @@ body {
 .footer_top,
 .server_con,
 .footer_nav,
-.foot_last {
+.foot_last,
+.pro_con {
   width: 1090px;
   margin: 0 auto; }
 
@@ -470,3 +471,70 @@ body {
 
 .foot_last_wrap {
   background: #666; }
+
+.pro_con {
+  background: chartreuse;
+  position: relative; }
+
+.foot {
+  position: relative;
+  bottom: -1px;
+  width: 100%; }
+
+#wrap div span {
+  width: 330px;
+  height: 345px;
+  display: block;
+  overflow: hidden;
+  position: relative; }
+
+#wrap div span img {
+  width: 862px;
+  height: 345px;
+  margin-left: -238px; }
+
+#wrap div p {
+  width: 310px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #f2f2ff;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 10px;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3; }
+
+#wrap div input {
+  width: 79px;
+  height: 26px;
+  color: #fff;
+  background: #ed155b;
+  line-height: 26px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: none; }
+
+#wrap div:hover p,
+#wrap div:hover input {
+  display: block; }
+
+#wrap div h4 {
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 8px; }
+
+#wrap div i {
+  font-size: 22px;
+  color: #ed155b;
+  line-height: 30px;
+  display: block;
+  margin-top: 18px; }

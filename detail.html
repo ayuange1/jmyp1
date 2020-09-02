@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail</title>
+    <link rel="stylesheet" href="../dist/css/reset.css">
+    <link rel="stylesheet" href="../dist/css/index.css">
+
+    <link rel="stylesheet" href="../dist/css/detail.css">
+    <script src="../js/jquery-1.11.0.js"></script>
+    <style>
+        .pro_show {
+            position: relative;
+        }
+        
+        .box {
+            width: 400px;
+        }
+        
+        .mid {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .mid img {
+            width: 862px;
+            height: 400px;
+            margin-left: -238px;
+        }
+        
+        .zoom {
+            width: 200px;
+            height: 200px;
+            background-color: #999999;
+            opacity: 0.3;
+            display: none;
+            position: absolute;
+        }
+        
+        .big {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            position: absolute;
+            top: -1px;
+            left: 401px;
+            display: none;
+            box-shadow: 2px 2px 4px #e3e3e3;
+            z-index: 6;
+        }
+        
+        .big img {
+            width: 800px;
+            height: 800px;
+            position: absolute;
+        }
+        
+        .min img {
+            width: 50px;
+            height: 70px;
+            float: left;
+            margin: 20px;
+            border: solid 1px #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header_wrap">
+        <div class="header_con  clean">
+            <div class="top_l clean">
+                <ul>
+                    <li>欢迎来到聚美！</li>
+                    <li>
+                        <a href="">请登录</a>
+                    </li>
+                    <li>
+                        <a href="">快速注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top_r">
+                <ul>
+                    <li><a href="">正品保证</a> </li>
+                    <li><a href="">订单查询</a> </li>
+                    <li><span class="heart"></span><a href="">收藏的商品</a></li>
+                    <li class="xia"><a href="">我的聚美</a><span class="tou"></span>
+                        <ul class="woDe">
+                            <li><a href="">我的订单</a></li>
+                            <li><a href="">我的现金券</a></li>
+                            <li><a href="">我的红包</a></li>
+                            <li><a href="">我的余额</a></li>
+                            <li><a href="">我的提现退款</a></li>
+                            <li><a href="">我的收藏</a></li>
+                            <li><a href="">我的心愿单</a></li>
+                            <li><a href="">会员中心</a></li>
+                            <li><a href="">礼品卡兑换</a></li>
+                        </ul>
+                    </li>
+
+                    <li><span class="phone"></span><a style="color:#ed155b;" href="">手机聚美</a></li>
+                    <li class="xia"><a href="">更多</a><span class="tou"></span>
+                        <ul class="gen_duo">
+                            <li><a href="">邀请好友</a></li>
+                            <li><a href="">加入收藏</a></li>
+                            <li><a href="">新浪微博</a></li>
+                            <li><a href="">聚美微信</a></li>
+                            <li><a href="">我的提现退款</a></li>
+                            <li><a href="">百度贴吧</a></li>
+                            <li><a href="">腾讯微博</a></li>
+                            <li><a href="">人人公众主页</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="logo_search">
+        <div class="logo">
+            <img src="../img/logo.jpg" alt="">
+        </div>
+
+        <div class="shopCar top_r">
+            <img src="../img/cart.gif" alt="">
+            <ul class="jie">
+                <li class="xia"><a href="">去购物车结算</a><span class="tou"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="navWrap">
+        <div class="nav_two">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">极速免税店</a></li>
+                <li><a href="">母婴特卖</a></li>
+                <li><a href="">美妆商城</a></li>
+                <li><a href="">国际轻奢</a></li>
+                <li><a href="">服装运动</a></li>
+                <li><a href="">鞋包配饰</a></li>
+            </ul>
+            <div>
+                <a href=""><img src="../img/z_01new.jpg" alt=""></a>
+                <a href=""><img src="../img/z03.jpg" alt=""></a>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="pro_show">
+        <!-- <div class="box">
+            <div class="mid">
+                <img src="img/02.jpg" alt="">
+                <div class="zoom"></div>
+            </div>
+
+            <div class="big">
+                <img src="img/02.jpg" alt="">
+            </div>
+
+            <div class="min">
+                <img src="img/01.jpg" alt="">
+                <img src="img/02.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="detail_show">
+            <h1> 李佳琦推荐韩国acwell艾珂薇N4舒缓保湿水分急救面霜50ml，敏感肌可用，高保湿、质地轻薄水润不油腻
+            </h1>
+            <h5>￥69</h5>
+            <ul class="server">
+                <li>
+                    <span>满赠</span> 满176元赠cosme大赏推荐娜斯丽Nursery日本柚子化妆爽肤水500ml敏感肌可用
+                </li>
+                <li>
+                    运费
+                    <span>新人包邮</span>
+                </li>
+                <li style="float: left;">
+                    服务
+                    <ul>
+                        <i>质量保险</i>
+                        <i>本商品不支持退货</i>
+                        <i>本商品不支持换货</i>
+                        <i>闪电发货</i>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <div class="num">
+                <p>数量</p>
+                <div class="val">
+                    <input type="text" value="1">
+                    <span class="s"></span>
+                    <span class="x"></span>
+                </div>
+            </div>
+
+            <input type="button" value="加入购物车" id="addCar">
+
+        </div> -->
+    </div>
+    <script src="../js/zoom.js"></script>
+    <script>
+        $(function() {
+            console.log($(".top_r .xia").eq(0))
+            $(".top_r .xia").eq(0).hover(function() {
+                $(".top_r .woDe").stop().slideToggle("quality");
+                return false;
+            });
+            $(".top_r .xia").eq(1).hover(function() {
+                $(".top_r .gen_duo").stop().slideToggle("quality");
+                return false;
+            });
+
+            // $(".mid").mouseenter(function() {
+            //     $(".zoom").show();
+            //     $(".big").show();
+            // }).mouseleave(function() {
+            //     $(".zoom").hide();
+            //     $(".big").hide();
+            // })
+
+            // $(".zoom").mousemove(function(evt) {
+            //     var x = evt.pageX - $(".box").offset().left;
+            //     var y = evt.pageY - $(".box").offset().top;
+            //     var maxH = $(".mid").height() - $(".zoom").height();
+            //     var maxW = $(".mid").width() - $(".zoom").width();
+
+            //     var l = x - $(".zoom").width() / 2;
+            //     var t = y - $(".zoom").height() / 2;
+
+            //     l = l <= 0 ? 0 : l >= maxW ? maxW : l;
+            //     t = t <= 0 ? 0 : t >= maxH ? maxH : t;
+
+            //     $(".zoom").css({
+            //         "left": l,
+            //         "top": t
+            //     })
+
+            //     $(".big img").css({
+            //         "left": -2 * l,
+            //         "top": -2 * t,
+            //     })
+
+            //     $(".min img").click(function() {
+            //         $(".mid img").attr("src", $(this).attr("src"));
+            //         $(".big img").attr("src", $(this).attr("src"));
+            //     })
+
+
+
+            // })
+
+
+        })
+
+        var proId = location.search.split("=")[1];
+        console.log(proId);
+        $.get("http://jx.xuzhixiang.top/ap/api/detail.php", {
+            id: proId
+        }, data => {
+            console.log(data);
+            var str = "";
+            var proShow = document.querySelector(".pro_show");
+            console.log(proShow)
+            var data2 = data.data;
+            console.log(data2)
+            str = `<div class="pro_show">
+                
+                <div class="box">
+                    <div class="mid">
+                        <img src="${data2.pimg}" alt="">
+                        <div class="zoom"></div>
+                    </div>
+        
+                    <div class="big">
+                        <img src="${data2.pimg}" alt="">
+                    </div>
+        
+                    <div class="min">
+                        
+                        <img src="${data2.pimg}" alt="">
+        
+                    </div>
+                </div>
+                <div class="detail_show">
+                    <h1>${data2.pdesc}
+                    </h1>
+                    <h5>￥${data2.pprice}</h5>
+                    <ul class="server">
+                        <li>
+                            <span>满赠</span>${data2.pdesc} 
+                        </li>
+                        <li>
+                            运费
+                            <span>新人包邮</span>
+                        </li>
+                        <li style="float: left;">
+                            服务
+                            <ul>
+                                <i>质量保险</i>
+                                <i>本商品不支持退货</i>
+                                <i>本商品不支持换货</i>
+                                <i>闪电发货</i>
+                            </ul>
+                        </li>
+                    </ul>
+        
+        
+                    <div class="num">
+                        <p>数量</p>
+                        <div class="val">
+                            <input type="text" value="1">
+                            <span class="s"></span>
+                            <span class="x"></span>
+                        </div>
+                    </div>
+        
+                    <input type="button" value="加入购物车" id="addCar">
+        
+                </div>
+            </div>`
+            proShow.innerHTML = str;
+            $(".mid").mouseenter(function() {
+                $(".zoom").show();
+                $(".big").show();
+            }).mouseleave(function() {
+                $(".zoom").hide();
+                $(".big").hide();
+            })
+
+            $(".zoom").mousemove(function(evt) {
+                var x = evt.pageX - $(".box").offset().left;
+                var y = evt.pageY - $(".box").offset().top;
+                var maxH = $(".mid").height() - $(".zoom").height();
+                var maxW = $(".mid").width() - $(".zoom").width();
+
+                var l = x - $(".zoom").width() / 2;
+                var t = y - $(".zoom").height() / 2;
+
+                l = l <= 0 ? 0 : l >= maxW ? maxW : l;
+                t = t <= 0 ? 0 : t >= maxH ? maxH : t;
+
+                $(".zoom").css({
+                    "left": l,
+                    "top": t
+                })
+
+                $(".big img").css({
+                    "left": -2 * l,
+                    "top": -2 * t,
+                })
+
+                $(".min img").click(function() {
+                    $(".mid img").attr("src", $(this).attr("src"));
+                    $(".big img").attr("src", $(this).attr("src"));
+                })
+
+
+
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>

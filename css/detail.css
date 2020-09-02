@@ -1,0 +1,95 @@
+.pro_show {
+  width: 1090px;
+  margin: 0 auto; }
+
+.pro_show {
+  min-height: 400px; }
+
+.detail_show {
+  width: 400px;
+  height: 700px;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  left: 401px; }
+
+.detail_show h1 {
+  font-weight: 700;
+  padding-top: 38px;
+  color: #000;
+  line-height: 1.5;
+  font-size: 18px; }
+
+.detail_show h5 {
+  height: 38px;
+  color: #232323;
+  line-height: 1;
+  font-size: 30px;
+  margin-top: 20px; }
+
+.detail_show .server span {
+  background: #000;
+  color: #fff;
+  padding: 1px 2px;
+  float: left;
+  margin-right: 5px; }
+
+.detail_show .server li {
+  color: #999;
+  border-bottom: dashed 1px #999999;
+  padding: 15px 0; }
+
+.detail_show .server li ul i {
+  float: left;
+  border-right: solid 1px #6666;
+  padding: 0 5px;
+  color: #333; }
+
+.detail_show .num {
+  width: 400px;
+  float: left; }
+
+.detail_show .num p {
+  float: left;
+  font-size: 14px;
+  padding: 15px 0; }
+
+.detail_show .num .val {
+  width: 80px;
+  height: 25px;
+  float: left;
+  border: solid 1px #cceecc;
+  margin-left: 20px;
+  margin-top: 15px; }
+
+.detail_show .num .val input {
+  width: 60px;
+  height: 30px; }
+
+.detail_show .num .val .s {
+  width: 14px;
+  height: 13px;
+  display: block;
+  float: right;
+  background: url(../img/jiantou.jpg) no-repeat;
+  background-position: -1px -2px; }
+
+.detail_show .num .val .x {
+  width: 14px;
+  height: 13px;
+  display: block;
+  float: right;
+  margin-top: -16px;
+  background: url(../img/jiantou.jpg);
+  background-position: -1px -26px; }
+
+#addCar {
+  width: 195px;
+  height: 46px;
+  background: #ed145b;
+  color: #fff;
+  display: block;
+  line-height: 46px;
+  font-size: 16px;
+  float: left;
+  margin-top: 20px; }
